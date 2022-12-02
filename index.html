@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/048208056e.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>What To-Do</title>
+</head>
+<body>
+
+    <nav id="nav">
+        <div class="nav-top">
+            <div id="nav-toggle" class="nav-toggle"></div>
+            <h1>To-Do</h1>
+        </div>
+
+        <ul class="nav-options">
+            <div id="all-tasks-wrapper">
+                <li id="all-tasks-btn" class="nav-item nav-btn active">
+                    <span class="icon"><i class="fa-solid fa-folder-open"></i></span>
+                    <span class="item-text">All tasks</span>
+                </li>
+            </div>
+
+            <div id="projects-wrapper" class="projects-wrapper">
+                <li class="nav-item">
+                    <span class="icon"><i class="fa-solid fa-diagram-project"></i></span>
+                    <span class="item-text">Projects</span>
+                </li>
+            </div>
+            
+            <div id="notes-wrapper">
+                <li id="notes-btn" class="nav-item nav-btn">
+                    <span class="icon"><i class="fa-solid fa-list"></i></span>
+                    <span class="item-text">Notes</span>
+                </li>
+            </div>
+
+            <div class="open-modal-btn-wrapper">
+                <button id="open-modal-btn" class="open-modal-btn"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </ul>
+
+        <div class="github-wrapper">
+            <a class="credit" target="_blank" href="https://github.com/brajpatel" title="My Github!">
+                <span class="icon github-icon"><i class="fa-brands fa-github"></i></span>
+                <span class="credit-text">Made by Brajesh</span>
+            </a>
+
+        </div>
+    </nav>
+
+    <main id="main"></main>
+
+    <div id="modal-container" class="modal-container">
+        <div id="modal" class="modal">
+            <div class="modal-title">
+                <h2>Add New...</h2>
+                <i id="exit-modal" class="fa-solid fa-xmark"></i>
+            </div>
+        
+            <div class="modal-sidebar">
+                <ul class="modal-options">
+                    <li id="new-task-btn" class="modal-option">Task</li>
+                    <li id="new-project-btn" class="modal-option">Project</li>
+                    <li id="new-note-btn" class="modal-option">Note</li>
+                </ul>
+            </div>
+
+            <div id="form-container" class="form-container"></div>
+        </div>
+
+        <div id="project-task-modal" class="project-task-modal">
+            <div class="modal-title">
+                <h2>Add New Project Task</h2>
+                <i id="exit-project-task-modal" class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div id="project-form-container" class="project-form-container">
+                <form id="project-task-form" class="project-task-form" action="#">
+                    <div class="align-center">
+                        <input id="project-task-title-input" class="title-input" placeholder="Task Title: e.g. Go for a run" type="text" required>
+                    </div>
+                    <div>
+                        <textarea id="project-task-details-input" class="details-input" placeholder="Task Details: e.g. Run 3 kilometres, walk 1 kilometre" required></textarea>
+                    </div>
+                    <div class="align-center date-input-container">
+                        <h3>Due Date:</h3>
+                        <input id="project-task-date-input" class="date-input" type="date">
+                    </div>
+                    <div class="align-center priority-btns-container">
+                        <h3>Priority:</h3>
+                        <input id="task-low-priority-btn" class="priority-btn" value="low_priority" name="task-priority" type="radio">
+                        <label id="task-low-priority-label" for="task-low-priority-btn">Low</label>
+                        <input id="task-medium-priority-btn" class="priority-btn" value="medium_priority" name="task-priority" type="radio">
+                        <label id="task-medium-priority-label" for="task-medium-priority-btn">Medium</label>
+                        <input id="task-high-priority-btn" class="priority-btn" value="high_priority" name="task-priority" type="radio">
+                        <label id="task-high-priority-label" for="task-high-priority-btn">High</label>
+                    </div>
+                    <div class="align-center">
+                        <button id="confirm-project-task" class="confirm-new-item-btn" type="button">Confirm Task</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div id="task-form-complete" class="form-complete">
+            <h2>Your task has successfully been added!</h2>
+        </div>
+
+        <div id="project-form-complete" class="form-complete">
+            <h2>Your project has successfully been created!</h2>
+        </div>
+
+        <div id="note-form-complete" class="form-complete">
+            <h2>Your note has successfully been added!</h2>
+        </div>
+
+        <div id="overlay" class="overlay"></div>
+    </div>
+
+    
+<script src="main.js"></script>
+</body>
+</html>
