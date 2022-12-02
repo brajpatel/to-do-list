@@ -10,4 +10,4 @@ These are some of the challenges I faced while making this project:
 - Creating tabbing logic within the navbar that included newly added nav items
 - Appending new items to the correct container
 ## View Project
-You can view the restaurant page live by clicking [here](https://brajpatel.github.io/to-do-list/).
+You can view the to-do list project live by clicking [here](https://brajpatel.github.io/to-do-list/).
