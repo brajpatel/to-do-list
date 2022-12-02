@@ -4,7 +4,7 @@
 ![preview-img3](https://github.com/brajpatel/to-do-list/blob/main/dist/images/preview-img3.jpg)
 ![preview-img4](https://github.com/brajpatel/to-do-list/blob/main/dist/images/preview-img4.jpg)
 ## About
-The restaurant page is the sixth project in The Odin Project's Full Stack JavaScript course.
+The to-do list is the sixth project in The Odin Project's Full Stack JavaScript course.
 <br/><br/>
 These are some of the challenges I faced while making this project:
 - Creating tabbing logic within the navbar that included newly added nav items
