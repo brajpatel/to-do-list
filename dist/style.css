@@ -9,7 +9,7 @@
 body {
     height: 100vh;
     max-height: 100vh;
-    background: #24252c;
+    background: #121212;
     position: relative;
     display: grid;
     grid-template-columns: 80px 1fr;
@@ -27,7 +27,7 @@ li {
 
 /* NAVBAR */
 nav {
-    background: #121212;
+    background: #161616;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -293,7 +293,7 @@ main {
     position: absolute;
     top: 1%;
     right: 1%;
-    background: #121212;
+    background: #161616;
     border-radius: 10px;
     grid-column: 2;
     height: 98%;
